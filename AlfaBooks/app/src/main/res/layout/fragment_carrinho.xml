@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:name="br.com.rocheikoaresalfabooks.alfabooks.Fragments.CarrinhoFragment"
+    android:id="@+id/fragment_carrinho_lv"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"> </ListView>

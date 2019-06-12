@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.rocheikoaresalfabooks.alfabooks">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_alfabooks_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_alfabooks_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Activities.InicialActivity" android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:parentActivityName=".Activities.InicialActivity" />
+
+        <activity
+            android:name=".Activities.CarrinhoActivity"
+            android:parentActivityName=".Activities.InicialActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.PesquisarActivity"
+            android:parentActivityName=".Activities.InicialActivity" />
+        <activity
+            android:name=".Activities.SobreActivity"
+            android:parentActivityName=".Activities.InicialActivity" />
+        <activity
+            android:name=".Activities.ExibirLivroActivity"
+            android:parentActivityName=".Activities.PesquisarActivity" />
+        <activity
+            android:name=".Activities.PainelActivity"
+            android:parentActivityName=".Activities.LoginActivity" />
+        <activity
+            android:name=".Activities.CadastrarClienteActivity"
+            android:parentActivityName=".Activities.PainelActivity" />
+        <activity
+            android:name=".Activities.CadastrarFornecedorActivity"
+            android:parentActivityName=".Activities.PainelActivity" />
+        <activity
+            android:name=".Activities.CadastrarProdutoActivity"
+            android:parentActivityName=".Activities.PainelActivity" />
+        <activity android:name=".Activities.AtualizarProdutoActivity"
+            android:parentActivityName=".Activities.PainelActivity" />
+        <activity android:name=".Activities.AtualizarClienteActivity"
+            android:parentActivityName=".Activities.PainelActivity"  />
+        <activity android:name=".Activities.AtualizarFornecedorActivity"
+            android:parentActivityName=".Activities.PainelActivity"  />
+        <activity android:name=".Activities.RemoverClienteActivity"
+            android:parentActivityName=".Activities.PainelActivity"  />
+        <activity android:name=".Activities.RemoverProdutoActivity"
+            android:parentActivityName=".Activities.PainelActivity"  />
+        <activity android:name=".Activities.RemoverFornecedorActivity"
+            android:parentActivityName=".Activities.PainelActivity" ></activity>
+    </application>
+
+</manifest>
